@@ -1,0 +1,27 @@
+var SequenceSum = (function(){
+function SequenceSum(){}
+
+SequenceSum.showSequence = function(N){
+  let ar = [];
+  var total=0;
+  for(var i=0; i<=N; i++)
+  {
+  ar.push(i);
+  total += i;
+  }
+  let a = ar.join('+');
+  
+  
+  
+  //return total;
+  if(N < 0) 
+  {return `${N}<0`;}
+  
+  if(N == 0) 
+  {return `${N}=0`; }
+  
+   return `${a} = ${total}`;
+  }
+  
+  return SequenceSum;
+})();
