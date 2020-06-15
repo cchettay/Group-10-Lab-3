@@ -1,0 +1,15 @@
+function oddOrEven(array) {
+   //var array=[1,2,3,4,5,6];
+  var sum=array.reduce(function(acc,initialvalue){
+  return acc + initialvalue;
+},0);
+if (sum % 2 == 0)
+{
+return "even"
+}
+else
+{
+return "odd"
+}
+
+}
